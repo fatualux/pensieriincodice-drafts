@@ -1,10 +1,15 @@
 #!/bin/bash
 
+# Choose a title for the gallery
 TITLE=$(zenity --entry --title="Gallery Title" --text="Enter the title for the gallery:")
 
-THUMBS_DIR=$(zenity --file-selection --directory --title="Select Thumbs Directory")
+# Choose a directory for thumbnails
+THUMBS_DIR_FULL=$(zenity --file-selection --directory --title="Select Thumbs Directory")
+THUMBS_DIR=$(basename "$THUMBS_DIR_FULL")
 
-IMAGES_DIR=$(zenity --file-selection --directory --title="Select Images Directory")
+# Choose a directory for images
+IMAGES_DIR_FULL=$(zenity --file-selection --directory --title="Select Images Directory")
+IMAGES_DIR=$(basename "$IMAGES_DIR_FULL")
 
 OUTPUT_HTML="${TITLE}.html"
 CSS_FILE="style.css"
@@ -14,14 +19,18 @@ if [ ! -f "$CSS_FILE" ]; then
     echo '  .thumbnail { width: 100%; height: auto; }' >> "$CSS_FILE"
 fi
 
+echo "##$TITLE"" > "$OUTPUT_HTML"
+echo "" >> "$OUTPUT_HTML"
 echo "<div class=\"gallery\">" > "$OUTPUT_HTML"
 
-for THUMB in "$THUMBS_DIR"/*; do
+for THUMB in "$THUMBS_DIR_FULL"/*; do
     if [ -f "$THUMB" ]; then
         FILENAME=$(basename "$THUMB")
         IMAGE_NAME="${FILENAME%.*}"
-        IMAGE_PATH=$(find "$IMAGES_DIR" -type f -iname "$IMAGE_NAME.*" -print -quit)
-        echo "  <a href=\"$IMAGE_PATH\"><img class=\"thumbnail\" src=\"$THUMB\" alt=\"$IMAGE_NAME\"></a>" >> "$OUTPUT_HTML"
+        IMAGE_PATH=$(find "$IMAGES_DIR_FULL" -type f -iname "$IMAGE_NAME.*" -print -quit)
+        RELATIVE_IMAGE_PATH="images/${FILENAME}"
+        RELATIVE_THUMB_PATH="thumbs/${FILENAME}"
+        echo "  <a href=\"$RELATIVE_IMAGE_PATH\"><img class=\"thumbnail\" src=\"$RELATIVE_THUMB_PATH\" alt=\"$IMAGE_NAME\"></a>" >> "$OUTPUT_HTML"
     fi
 done
 
