@@ -1,40 +1,43 @@
 #!/bin/bash
 
-# Output SVG file
-OUTPUT_SVG="gallery.svg"
+OUTPUT_HTML="README.md"
 
-# Directory containing images
 IMAGES_DIR="images"
+THUMBS_DIR="thumbs"
 
-# Header of the SVG gallery
-echo '<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">' > "$OUTPUT_SVG"
-echo '  <foreignObject width="100%" height="100%">' >> "$OUTPUT_SVG"
-echo '    <div xmlns="http://www.w3.org/1999/xhtml">' >> "$OUTPUT_SVG"
+echo "# GALLERY" > "$OUTPUT_HTML"
+echo "" >> "$OUTPUT_HTML"
+echo '<!DOCTYPE html>' >> "$OUTPUT_HTML"
+echo '<html lang="en">' >> "$OUTPUT_HTML"
+echo '<head>' >> "$OUTPUT_HTML"
+echo '  <meta charset="UTF-8">' >> "$OUTPUT_HTML"
+echo '  <meta name="viewport" content="width=device-width, initial-scale=1.0">' >> "$OUTPUT_HTML"
+echo '  <style>' >> "$OUTPUT_HTML"
+echo '    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }' >> "$OUTPUT_HTML"
+echo '    .thumbnail { width: 100%; height: auto; }' >> "$OUTPUT_HTML"
+echo '  </style>' >> "$OUTPUT_HTML"
+echo '</head>' >> "$OUTPUT_HTML"
+echo '<body>' >> "$OUTPUT_HTML"
+echo '' >> "$OUTPUT_HTML"
+echo '<div class="gallery">' >> "$OUTPUT_HTML"
 
-# CSS Styles
-echo '      <style>' >> "$OUTPUT_SVG"
-echo '        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }' >> "$OUTPUT_SVG"
-echo '        .thumbnail { width: 100%; height: auto; }' >> "$OUTPUT_SVG"
-echo '      </style>' >> "$OUTPUT_SVG"
-
-# Opening tag for the gallery
-echo '      <div class="gallery">' >> "$OUTPUT_SVG"
-
-# Loop through each image in the images directory
 for IMAGE in "$IMAGES_DIR"/*; do
     # Check if it's a file
     if [ -f "$IMAGE" ]; then
         # Get the filename
         FILENAME=$(basename "$IMAGE")
-        # Add image to the SVG gallery
-        echo '        <a href="'$IMAGE'" target="_blank">' >> "$OUTPUT_SVG"
-        echo '          <img src="'$IMAGE'" alt="Thumbnail of '$FILENAME'" class="thumbnail">' >> "$OUTPUT_SVG"
-        echo '        </a>' >> "$OUTPUT_SVG"
+        # Extract the image name without extension
+        IMAGE_NAME="${FILENAME%.*}"
+        # Thumbnail path
+        THUMB_PATH="$THUMBS_DIR/$FILENAME"
+        # Add image to the HTML gallery
+        echo "  <a href=\"$IMAGE\" target=\"_blank\">" >> "$OUTPUT_HTML"
+        echo "    <img src=\"$THUMB_PATH\" alt=\"Thumbnail of $FILENAME\" class=\"thumbnail\">" >> "$OUTPUT_HTML"
+        echo "  </a>" >> "$OUTPUT_HTML"
     fi
 done
 
-# Closing tags for the gallery and SVG
-echo '      </div>' >> "$OUTPUT_SVG"
-echo '    </div>' >> "$OUTPUT_SVG"
-echo '  </foreignObject>' >> "$OUTPUT_SVG"
-echo '</svg>' >> "$OUTPUT_SVG"
+echo '</div>' >> "$OUTPUT_HTML"
+echo '' >> "$OUTPUT_HTML"
+echo '</body>' >> "$OUTPUT_HTML"
+echo '</html>' >> "$OUTPUT_HTML"
