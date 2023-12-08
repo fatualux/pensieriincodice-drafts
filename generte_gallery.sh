@@ -30,14 +30,11 @@ for IMAGE in "$IMAGES_DIR"/*; do
         IMAGE_NAME="${FILENAME%.*}"
         # Thumbnail path
         THUMB_PATH="$THUMBS_DIR/$FILENAME"
-        # Add image to the HTML gallery
-        echo "  <a href=\"$IMAGE\" target=\"_blank\">" >> "$OUTPUT_HTML"
-        echo "    <img src=\"$THUMB_PATH\" alt=\"Thumbnail of $FILENAME\" class=\"thumbnail\">" >> "$OUTPUT_HTML"
-        echo "  </a>" >> "$OUTPUT_HTML"
+        # Add image link to the list
+        echo "  <a href=\"$IMAGE\"><img class=\"thumbnail\" src=\"$THUMB_PATH\" alt=\"$IMAGE_NAME\"></a>" >> "$OUTPUT_HTML"
     fi
 done
 
 echo '</div>' >> "$OUTPUT_HTML"
-echo '' >> "$OUTPUT_HTML"
 echo '</body>' >> "$OUTPUT_HTML"
 echo '</html>' >> "$OUTPUT_HTML"
