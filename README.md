@@ -24,7 +24,7 @@ This README file is still a WIP
 This project is licensed under the GPLv3 license.
 See LICENSE file for more details.
 
-## Ada Lovelaca
+## Ada Lovelace
 
 <div class="gallery">
   <a href="images/Ada_Lovelace_00.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_00.png" alt="Ada_Lovelace_00"></a>
