@@ -24,6 +24,8 @@ This README file is still a WIP
 This project is licensed under the GPLv3 license.
 See LICENSE file for more details.
 
+## Ada Lovelaca
+
 <div class="gallery">
   <a href="images/Ada_Lovelace_00.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_00.png" alt="Ada_Lovelace_00"></a>
   <a href="images/Ada_Lovelace_01.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_01.png" alt="Ada_Lovelace_01"></a>
@@ -35,6 +37,16 @@ See LICENSE file for more details.
   <a href="images/Ada_Lovelace_07.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_07.png" alt="Ada_Lovelace_07"></a>
   <a href="images/Ada_Lovelace_08.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_08.png" alt="Ada_Lovelace_08"></a>
   <a href="images/Ada_Lovelace_09.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_09.png" alt="Ada_Lovelace_09"></a>
+  <a href="images/Ada_Lovelace_100.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_100.png" alt="Ada_Lovelace_100"></a>
+  <a href="images/Ada_Lovelace_101.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_101.png" alt="Ada_Lovelace_101"></a>
+  <a href="images/Ada_Lovelace_102.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_102.png" alt="Ada_Lovelace_102"></a>
+  <a href="images/Ada_Lovelace_103.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_103.png" alt="Ada_Lovelace_103"></a>
+  <a href="images/Ada_Lovelace_104.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_104.png" alt="Ada_Lovelace_104"></a>
+  <a href="images/Ada_Lovelace_105.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_105.png" alt="Ada_Lovelace_105"></a>
+  <a href="images/Ada_Lovelace_106.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_106.png" alt="Ada_Lovelace_106"></a>
+  <a href="images/Ada_Lovelace_107.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_107.png" alt="Ada_Lovelace_107"></a>
+  <a href="images/Ada_Lovelace_108.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_108.png" alt="Ada_Lovelace_108"></a>
+  <a href="images/Ada_Lovelace_109.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_109.png" alt="Ada_Lovelace_109"></a>
   <a href="images/Ada_Lovelace_10.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_10.png" alt="Ada_Lovelace_10"></a>
   <a href="images/Ada_Lovelace_11.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_11.png" alt="Ada_Lovelace_11"></a>
   <a href="images/Ada_Lovelace_12.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_12.png" alt="Ada_Lovelace_12"></a>
@@ -109,6 +121,22 @@ See LICENSE file for more details.
   <a href="images/Ada_Lovelace_81.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_81.png" alt="Ada_Lovelace_81"></a>
   <a href="images/Ada_Lovelace_82.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_82.png" alt="Ada_Lovelace_82"></a>
   <a href="images/Ada_Lovelace_83.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_83.png" alt="Ada_Lovelace_83"></a>
+  <a href="images/Ada_Lovelace_84.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_84.png" alt="Ada_Lovelace_84"></a>
+  <a href="images/Ada_Lovelace_85.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_85.png" alt="Ada_Lovelace_85"></a>
+  <a href="images/Ada_Lovelace_86.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_86.png" alt="Ada_Lovelace_86"></a>
+  <a href="images/Ada_Lovelace_87.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_87.png" alt="Ada_Lovelace_87"></a>
+  <a href="images/Ada_Lovelace_88.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_88.png" alt="Ada_Lovelace_88"></a>
+  <a href="images/Ada_Lovelace_89.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_89.png" alt="Ada_Lovelace_89"></a>
+  <a href="images/Ada_Lovelace_90.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_90.png" alt="Ada_Lovelace_90"></a>
+  <a href="images/Ada_Lovelace_91.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_91.png" alt="Ada_Lovelace_91"></a>
+  <a href="images/Ada_Lovelace_92.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_92.png" alt="Ada_Lovelace_92"></a>
+  <a href="images/Ada_Lovelace_93.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_93.png" alt="Ada_Lovelace_93"></a>
+  <a href="images/Ada_Lovelace_94.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_94.png" alt="Ada_Lovelace_94"></a>
+  <a href="images/Ada_Lovelace_95.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_95.png" alt="Ada_Lovelace_95"></a>
+  <a href="images/Ada_Lovelace_96.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_96.png" alt="Ada_Lovelace_96"></a>
+  <a href="images/Ada_Lovelace_97.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_97.png" alt="Ada_Lovelace_97"></a>
+  <a href="images/Ada_Lovelace_98.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_98.png" alt="Ada_Lovelace_98"></a>
+  <a href="images/Ada_Lovelace_99.png"><img class="thumbnail" src="thumbs/Ada_Lovelace_99.png" alt="Ada_Lovelace_99"></a>
 </div>
 </body>
 </html>
