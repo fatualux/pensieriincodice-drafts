@@ -24,7 +24,7 @@ This README file is still a WIP
 This project is licensed under the GPLv3 license.
 See LICENSE file for more details.
 
-##La trappola della semplicità (riflessioni dal containerday 2023)
+## La trappola della semplicità (riflessioni dal containerday 2023)
 
 <div class="gallery">
   <a href="images/container_day-01.png"><img class="thumbnail" src="thumbs/container_day-01.png" alt="container_day-01"></a>
