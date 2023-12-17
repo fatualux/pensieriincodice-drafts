@@ -18,6 +18,7 @@ body() {
   write_to_file ""
   write_to_file "L'episodio di oggi è https://pensieriincodice.it/$PIC_NUMBER"
   write_to_file ""
+  write_to_file "La galleria delle bozze si trova qui:"
   write_to_file "https://github.com/fatualux/pensieriincodice-drafts/#GALLERY"
   write_to_file ""
   write_to_file "Vota la tua preferita nel sondaggio che seguirà!"
