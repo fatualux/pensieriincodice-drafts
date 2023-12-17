@@ -18,7 +18,7 @@ body() {
   write_to_file ""
   write_to_file "L'episodio di oggi è https://pensieriincodice.it/$PIC_NUMBER"
   write_to_file ""
-  write_to_file "Le cover candidate realizzate da @fatualux sono https://github.com/valeriogalano/pensieriincodice-assets/covers/$PIC_NUMBER"
+  write_to_file "https://github.com/fatualux/pensieriincodice-drafts/#GALLERY"
   write_to_file ""
   write_to_file "Vota la tua preferita nel sondaggio che seguirà!"
   write_to_file ""
@@ -27,8 +27,6 @@ body() {
 
 # Write poll section
 poll() {
-  write_to_file "La galleria immagini si trova qui: https://github.com/fatualux/pensieriincodice-drafts/"
-  write_to_file ""
   write_to_file "Fra le immagini elencate, quale preferisci per l'episodio $PIC_NUMBER?"
   write_to_file ""
 }
