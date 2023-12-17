@@ -21,7 +21,9 @@ if [ ! -f "$CSS_FILE" ]; then
     echo '  .thumbnail { width: 100%; height: auto; }' >> "$CSS_FILE"
 fi
 
-echo "##$TITLE" > "$OUTPUT_HTML"
+echo "## GALLERY" > "$OUTPUT_HTML"
+echo "" >> "$OUTPUT_HTML"
+echo "### $TITLE" >> "$OUTPUT_HTML"
 echo "" >> "$OUTPUT_HTML"
 echo "<div class=\"gallery\">" >> "$OUTPUT_HTML"
 
