@@ -27,7 +27,9 @@ This README file is still a WIP
 This project is licensed under the GPLv3 license.
 See LICENSE file for more details.
 
-## Le lettere di Mary Stuart e l'algoritmo di Hill climbing
+## GALLERY
+
+### Le lettere di Mary Stuart e l'algoritmo di Hill climbing
 
 <div class="gallery">
   <a href="images/PIC120_01.png"><img class="thumbnail" src="thumbs/PIC120_01.png" alt="PIC120_01"></a>
